@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="bwie.mvpliving">
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:name=".MyAPP"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".mvp.view.activity.FlashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvp.view.activity.HomeActivity">
+        </activity>
+
+        <meta-data
+            android:name="design_width"
+            android:value="1200">
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920">
+        </meta-data>
+
+        <activity android:name=".mvp.view.activity.WechatActivityTwo">
+        </activity>
+        <activity android:name=".mvp.view.activity.ColumnActivityTwo">
+        </activity>
+        <activity android:name=".mvp.view.activity.ColumnDetailActivity">
+        </activity>
+        <activity android:name=".mvp.view.activity.TvActivity">
+        </activity>
+    </application>
+
+</manifest>
